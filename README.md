@@ -34,7 +34,7 @@ mv terraform.tfvars.template terraform.tfvars
 3. Execute Terraform commands with existing identity (human or service account) to build Vertex Workbench Infrastructure 
 
 ```
-cd ~/terraform-google-vertex-workbench/
+cd ~/terraform-google-cos-only/
 terraform init
 terraform plan
 terraform apply
