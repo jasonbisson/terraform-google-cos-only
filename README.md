@@ -4,8 +4,8 @@ This module will address the customers who only want to use managed services and
 
 The resources/services/activations/deletions that this module will create/trigger are:
 
-- Create an Organizational constraint for COS Images only with an exception of folder id where 3rd party operating systems can be deployed
-- Create an Organizational constraint to Restrict Resource Service Usage to deny compute.googleapis.com
+- Create an Organizational constraint for COS Images only with an exception for 3rd party operating systems deployed under a specific folder id
+- Create an Organizational constraint to Restrict Resource Service Usage to deny compute.googleapis.com 
 - Deploy a IAM Deny policy that only allows a list of service accounts to deploy compute instances
 
 ## Demo Architecture
