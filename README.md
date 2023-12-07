@@ -1,5 +1,3 @@
-# terraform-google-gke-only
-
 ## Description
 ### Tagline
 This is an auto-generated module.
