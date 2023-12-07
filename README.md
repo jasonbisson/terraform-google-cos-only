@@ -48,14 +48,26 @@ Functional examples are included in the
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| bucket\_name | The name of the bucket to create | `string` | n/a | yes |
-| project\_id | The project ID to deploy to | `string` | n/a | yes |
+| allow | (Only for list constraints) List of values which should be allowed | `list(string)` | <pre>[<br>  ""<br>]</pre> | no |
+| allow\_list\_length | The number of elements in the allow list | `number` | `0` | no |
+| constraint | The constraint to be applied | `string` | `null` | no |
+| cos\_os\_allowed\_folder\_id | The folder id is for projects where only the locked down Container Optimized operating system (aka GKE) can be deployed | `string` | n/a | yes |
+| denied\_permissions | List of permissions for the deny policy | `list(string)` | n/a | yes |
+| deny | (Only for list constraints) List of values which should be denied | `list(string)` | <pre>[<br>  ""<br>]</pre> | no |
+| deny\_list\_length | The number of elements in the deny list | `number` | `0` | no |
+| enforce | If boolean constraint, whether the policy is enforced at the root; if list constraint, whether to deny all (true) or allow all | `bool` | `null` | no |
+| exception\_principals | Service Agents where compute instances will not be denied | `list(string)` | n/a | yes |
+| exclude\_folders | Set of folders to exclude from the policy | `set(string)` | `[]` | no |
+| exclude\_projects | Set of projects to exclude from the policy | `set(string)` | `[]` | no |
+| organization\_id | The organization id for putting the policy | `string` | `null` | no |
+| policy\_for | Resource hierarchy node to apply the policy to: can be one of `organization`, `folder`, or `project`. | `string` | `null` | no |
+| policy\_type | The constraint type to work with (either 'boolean' or 'list') | `string` | `"list"` | no |
+| project\_id | The project id for putting the policy | `string` | `null` | no |
+| traditional\_os\_allowed\_folder\_id | The folder id is for projects where traditional operating systems can be deployed | `string` | n/a | yes |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| bucket\_name | Name of the bucket |
+No outputs.
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
