@@ -1,6 +1,6 @@
 
 ## Purpose
-This module will address the customers who only want to use managed services and Google Kubernetes service, and not Compute service. This module will deploy the preventative and detective controls to the Google compute service can only be created by Google Kubernetes service agent with the Container Optimized OS. 
+This module will address the customers who have targeted use cases for the compute service. This module will turn up the preventative controls to an eleven and will cause an outage if you don't understand the organization policy constraints or IAM deny. 
 
 The resources/services/activations/deletions that this module will create/trigger are:
 
