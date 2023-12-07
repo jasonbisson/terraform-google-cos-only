@@ -1,0 +1,5 @@
+organization_id                  = "Your organization_id"
+traditional_os_allowed_folder_id = "Folder id where traditional os is allowed"
+cos_os_allowed_folder_id         = "Folder id where only COS is allowed"
+exception_principals             = ["principal://iam.googleapis.com/projects/-/serviceAccounts/<service account for GKE or other service accounts"]
+denied_permissions               = ["compute.googleapis.com/instances.create"]
