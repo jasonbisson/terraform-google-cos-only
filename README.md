@@ -72,9 +72,8 @@ The following dependencies must be available:
 ### Deployment Account
 
 The account used for the deployment will require the following roles:
-- Organizational Policy admin
+- Organizational Policy admin roles/orgpolicy.policyAdmin
 - IAM Deny admin roles/iam.denyAdmin
-
 
 ### APIs
 Since a project is created by the Project Factory module, you must activate the following APIs on the base project where the Service Account was created:
