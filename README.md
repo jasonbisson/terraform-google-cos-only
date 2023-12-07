@@ -9,7 +9,7 @@ The resources/services/activations/deletions that this module will create/trigge
 - Deploy a IAM Deny policy that only allows a list of service accounts to deploy compute instances
 
 ## Demo Architecture
-![Reference Architecture](diagram/chronicle.png)
+![Reference Architecture](diagram/cosonly.png)
 
 ## Documentation
 - [Organizational Polict Constraints](https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints)
